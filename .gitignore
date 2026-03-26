@@ -1,0 +1,7 @@
+.vs/
+*.o
+*.nes
+*.log
+*.tmp
+Thumbs.db
+Desktop.ini

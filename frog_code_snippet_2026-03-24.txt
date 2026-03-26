@@ -1,0 +1,316 @@
+Frog code snippet from hello-pond.asm
+
+Useful parts:
+- `frog_facing` tracks which direction the frog is facing.
+- `update_frog` changes facing and position from left/right input.
+- `draw_frog` mirrors the sprite when facing left.
+- `select_frog_pose` picks idle, walk, crouch, jump, and land frames.
+
+```asm
+; Zero page
+frog_facing:  .res 1
+
+FROG_IDLE_TL   = $7F
+FROG_IDLE_TR   = $80
+FROG_IDLE_BL   = $81
+FROG_IDLE_BR   = $82
+FROG_WALK1_TL  = $83
+FROG_WALK1_TR  = $84
+FROG_WALK1_BL  = $85
+FROG_WALK1_BR  = $86
+FROG_WALK2_TL  = $87
+FROG_WALK2_TR  = $88
+FROG_WALK2_BL  = $89
+FROG_WALK2_BR  = $8A
+FROG_WALK3_TL  = $8B
+FROG_WALK3_TR  = $8C
+FROG_WALK3_BL  = $8D
+FROG_WALK3_BR  = $8E
+FROG_WALK4_TL  = $8F
+FROG_WALK4_TR  = $90
+FROG_WALK4_BL  = $91
+FROG_WALK4_BR  = $92
+FROG_CROUCH_TL = $93
+FROG_CROUCH_TR = $94
+FROG_CROUCH_BL = $95
+FROG_CROUCH_BR = $96
+FROG_JUMP_TL   = $97
+FROG_JUMP_TR   = $98
+FROG_JUMP_BL   = $99
+FROG_JUMP_BR   = $9A
+FROG_LAND_TL   = $9B
+FROG_LAND_TR   = $9C
+FROG_LAND_BL   = $9D
+FROG_LAND_BR   = $9E
+
+update_frog:
+    ; left
+    lda buttons
+    and #BUTTON_LEFT
+    beq @right
+    lda #$00
+    sta frog_facing
+    lda frog_x
+    sec
+    sbc #$02
+    cmp #$08
+    bcc @right
+    sta frog_x
+
+@right:
+    lda buttons
+    and #BUTTON_RIGHT
+    beq @jump
+    lda #$01
+    sta frog_facing
+    lda frog_x
+    clc
+    adc #$02
+    cmp #240
+    bcs @jump
+    sta frog_x
+
+@jump:
+    lda buttons
+    and #BUTTON_A
+    beq @no_jump
+    lda buttons_old
+    and #BUTTON_A
+    bne @no_jump
+    lda on_ground
+    beq @no_jump
+    lda #$F8
+    sta frog_vel_y
+    lda #$00
+    sta on_ground
+
+@no_jump:
+    lda on_ground
+    bne @done
+
+    ; apply velocity
+    lda frog_y
+    clc
+    adc frog_vel_y
+    sta frog_y
+
+    ; gravity
+    lda frog_vel_y
+    clc
+    adc #$01
+    sta frog_vel_y
+
+    ; ground collision
+    lda frog_y
+    cmp #180
+    bcc @done
+    lda #180
+    sta frog_y
+    lda #$00
+    sta frog_vel_y
+    lda #$01
+    sta on_ground
+
+@done:
+    rts
+
+draw_frog:
+    lda frog_y
+    sta frog_draw_y
+
+    jsr select_frog_pose
+
+    lda frog_facing
+    beq @face_right
+    jmp @face_left
+
+@face_left:
+    ldy #$00
+    ; mirrored top-left
+    lda frog_draw_y
+    sta $0200,y
+    iny
+    lda frog_tile_tr
+    sta $0200,y
+    iny
+    lda #%01000001
+    sta $0200,y
+    iny
+    lda frog_x
+    sta $0200,y
+    iny
+    ; mirrored top-right
+    lda frog_draw_y
+    sta $0200,y
+    iny
+    lda frog_tile_tl
+    sta $0200,y
+    iny
+    lda #%01000001
+    sta $0200,y
+    iny
+    lda frog_x
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    ; mirrored bottom-left
+    lda frog_draw_y
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    lda frog_tile_br
+    sta $0200,y
+    iny
+    lda #%01000001
+    sta $0200,y
+    iny
+    lda frog_x
+    sta $0200,y
+    iny
+    ; mirrored bottom-right
+    lda frog_draw_y
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    lda frog_tile_bl
+    sta $0200,y
+    iny
+    lda #%01000001
+    sta $0200,y
+    iny
+    lda frog_x
+    clc
+    adc #8
+    sta $0200,y
+    rts
+
+@face_right:
+    ldy #$00
+    ; top-left
+    lda frog_draw_y
+    sta $0200,y
+    iny
+    lda frog_tile_tl
+    sta $0200,y
+    iny
+    lda #%00000001
+    sta $0200,y
+    iny
+    lda frog_x
+    sta $0200,y
+    iny
+    ; top-right
+    lda frog_draw_y
+    sta $0200,y
+    iny
+    lda frog_tile_tr
+    sta $0200,y
+    iny
+    lda #%00000001
+    sta $0200,y
+    iny
+    lda frog_x
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    ; bottom-left
+    lda frog_draw_y
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    lda frog_tile_bl
+    sta $0200,y
+    iny
+    lda #%00000001
+    sta $0200,y
+    iny
+    lda frog_x
+    sta $0200,y
+    iny
+    ; bottom-right
+    lda frog_draw_y
+    clc
+    adc #8
+    sta $0200,y
+    iny
+    lda frog_tile_br
+    sta $0200,y
+    iny
+    lda #%00000001
+    sta $0200,y
+    iny
+    lda frog_x
+    clc
+    adc #8
+    sta $0200,y
+    rts
+
+select_frog_pose:
+    lda on_ground
+    beq @airborne
+
+    lda buttons
+    and #$03
+    beq @idle
+
+    lda frame_counter
+    lsr
+    and #$03
+    tax
+    lda walk_pose_table,x
+    jsr set_frog_pose
+    rts
+
+@idle:
+    lda #FROG_IDLE_TL
+    jsr set_frog_pose
+    rts
+
+@airborne:
+    lda frame_counter
+    and #$03
+    beq @jump_prep
+    cmp #$01
+    beq @jump_up
+    cmp #$02
+    beq @land
+    lda #FROG_JUMP_TL
+    jsr set_frog_pose
+    rts
+
+@jump_prep:
+    lda #FROG_CROUCH_TL
+    jsr set_frog_pose
+    rts
+
+@jump_up:
+    lda #FROG_JUMP_TL
+    jsr set_frog_pose
+    rts
+
+@land:
+    lda #FROG_LAND_TL
+    jsr set_frog_pose
+    rts
+
+set_frog_pose:
+    sta frog_tile_tl
+    clc
+    adc #$01
+    sta frog_tile_tr
+    clc
+    adc #$01
+    sta frog_tile_bl
+    clc
+    adc #$01
+    sta frog_tile_br
+    rts
+
+walk_pose_table:
+    .byte FROG_WALK1_TL, FROG_WALK2_TL, FROG_WALK3_TL, FROG_WALK4_TL
+```
