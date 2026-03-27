@@ -1,7 +1,14 @@
 .vs/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 *.o
 *.nes
+*.bak
+*~
 *.log
 *.tmp
+.DS_Store
 Thumbs.db
 Desktop.ini

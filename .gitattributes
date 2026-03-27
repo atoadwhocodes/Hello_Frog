@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+*.png binary
+*.chr binary
+*.nes binary
+*.o binary
+*.otf binary
+*.ttf binary
+*.bmp binary
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.exe binary
+*.dll binary
