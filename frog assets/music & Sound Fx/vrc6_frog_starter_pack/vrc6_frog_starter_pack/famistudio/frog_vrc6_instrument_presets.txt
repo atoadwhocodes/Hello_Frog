@@ -1,0 +1,45 @@
+VRC6 FROG STARTER INSTRUMENT RECIPES
+==================================
+
+These are plain-language starter recipes, not a locked format.
+Use them as your first-pass FamiStudio instrument settings.
+
+1) CROAK_BODY (VRC6 Saw)
+- Use for: Ribbit body
+- Volume feel: high at start, then quick decay
+- Pitch feel: mild downward sweep
+- Character: chest / body / wet croak mass
+
+Try this behavior:
+- Start strong
+- Drop quickly over ~6-8 frames
+- Keep sustain very short
+- Avoid making it too musical
+
+2) THROAT_EDGE (VRC6 Pulse 1)
+- Use for: Ribbit attack / nasal tone
+- Duty trial: 25% first, 50% second if too thin
+- Volume feel: medium-high attack, quick fade
+- Pitch feel: mostly stable, slight front bend allowed
+
+3) HOP_CLICK (VRC6 Pulse 2)
+- Use for: Jump
+- Duty: 12.5% or 25%
+- Volume feel: sharp and short
+- Pitch feel: tiny upward scoop
+
+4) LAND_SOFT (2A03 Noise)
+- Use for: Land / idle shuffle texture
+- Volume feel: low-medium
+- Length: very short
+- Character: soft contact, not harsh burst
+
+5) BODY_THUNK (2A03 Triangle or low VRC6 support)
+- Use for: Land body
+- Keep very subtle
+- Remove it if land becomes muddy
+
+General note:
+If a sound stops reading clearly when one layer is muted, that can be good.
+It means each layer has a job.
+If every layer sounds redundant, simplify.

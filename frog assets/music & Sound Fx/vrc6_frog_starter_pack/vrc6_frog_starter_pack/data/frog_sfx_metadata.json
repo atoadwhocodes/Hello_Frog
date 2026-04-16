@@ -1,0 +1,47 @@
+[
+  {
+    "file": "frog_idle_shuffle.wav",
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frames": 5511,
+    "duration_seconds": 0.124966,
+    "duration_frames_60hz": 7.5
+  },
+  {
+    "file": "frog_jump.wav",
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frames": 5292,
+    "duration_seconds": 0.12,
+    "duration_frames_60hz": 7.2
+  },
+  {
+    "file": "frog_land.wav",
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frames": 3528,
+    "duration_seconds": 0.08,
+    "duration_frames_60hz": 4.8
+  },
+  {
+    "file": "frog_ribbit_button.wav",
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frames": 8731,
+    "duration_seconds": 0.197982,
+    "duration_frames_60hz": 11.88
+  },
+  {
+    "file": "frog_walk.wav",
+    "sample_rate_hz": 44100,
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "frames": 5291,
+    "duration_seconds": 0.119977,
+    "duration_frames_60hz": 7.2
+  }
+]

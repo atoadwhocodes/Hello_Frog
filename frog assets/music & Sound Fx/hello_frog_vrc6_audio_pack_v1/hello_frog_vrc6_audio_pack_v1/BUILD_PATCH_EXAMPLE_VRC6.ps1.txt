@@ -1,0 +1,24 @@
+; Example build patch for a split-object VRC6 audio path
+; adjust paths/output names to your repo layout
+
+ca65 hello-pond.asm -o build/hello-pond.o
+ca65 audio/audio_vrc6.asm -o build/audio_vrc6.o
+ca65 audio/audio_sfx_data_vrc6.asm -o build/audio_sfx_data_vrc6.o
+ca65 audio/audio_music_data_vrc6.asm -o build/audio_music_data_vrc6.o
+
+ld65 -C nes.cfg ^
+  build/hello-pond.o ^
+  build/audio_vrc6.o ^
+  build/audio_sfx_data_vrc6.o ^
+  build/audio_music_data_vrc6.o ^
+  -o build/hello-pond-vrc6.nes
+
+; Temporary easier path if your current build is single-unit:
+; - keep hello-pond.asm as the main assembly unit
+; - add:
+;     .include "audio/audio_ids.inc"
+;     .include "audio/audio_api.inc"
+;     .include "audio/audio_vrc6.asm"
+;     .include "audio/audio_sfx_data_vrc6.asm"
+;     .include "audio/audio_music_data_vrc6.asm"
+; - split into separate objects once stable

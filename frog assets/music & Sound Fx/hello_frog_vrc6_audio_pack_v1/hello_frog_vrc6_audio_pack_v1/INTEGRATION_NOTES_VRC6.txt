@@ -1,0 +1,78 @@
+hello_frog VRC6 audio pack v1
+================================
+
+What this pack is
+-----------------
+A VRC6-first audio skeleton and data pack for the frog project.
+
+Main design choices
+-------------------
+- Frog identity lives on VRC6 Saw + VRC6 Pulse 1.
+- Contact/impacts live on 2A03 Triangle + Noise.
+- Movement texture uses Noise and occasional VRC6 Pulse 2.
+- Music defaults to VRC6 Pulse 1 + VRC6 Pulse 2 + VRC6 Saw + Triangle + Noise.
+- 2A03 Pulse 1 is left mostly for UI / utility, though the driver still supports both APU pulses.
+
+Mapper variant
+--------------
+Default is:
+    VRC6_MAPPER = 24
+
+If your ROM uses mapper 026, set before including audio_api.inc:
+    VRC6_MAPPER = 26
+
+That flips the $x001 / $x002 low/high register mapping for VRC6 audio.
+
+Files
+-----
+audio/audio_ids.inc
+    Shared ID list for SFX/music.
+
+audio/audio_api.inc
+    VRC6 register mapping, channel masks, constants, timers, priorities.
+
+audio/audio_macros.inc
+    Simple helpers for SFX/music data.
+
+audio/audio_vrc6.asm
+    Driver shell with:
+      - Audio_Init
+      - Audio_Update
+      - Sfx_Play
+      - Music_Play
+      - Music_Stop
+    Supports one active SFX script at a time plus 5 music streams:
+      - VRC6 Pulse 1
+      - VRC6 Pulse 2
+      - VRC6 Saw
+      - Triangle
+      - Noise
+
+audio/audio_sfx_data_vrc6.asm
+    First-pass VRC6-tuned SFX scripts for the full ID list.
+
+audio/audio_music_data_vrc6.asm
+    First-pass track table and simple music streams.
+
+HELLO_POND_TRIGGER_TEMPLATE_VRC6.asm
+    Example call sites / trigger wiring.
+
+Reality check
+-------------
+This is much closer to the target than the earlier 2A03 pack, but it is still a first integration pack:
+- not compile-tested against your exact repo here
+- no DPCM path
+- no multi-SFX mixer
+- no per-channel owner table beyond simple "freeze music when SFX steals that channel"
+- music is intentionally small and readable, not a full tracker export
+
+Recommended next step
+---------------------
+1. wire the IDs into the real hello-pond.asm state transitions
+2. test in Mesen/FCEUX with your actual mapper setting (024 vs 026)
+3. confirm register variant first
+4. tune ribbit body and splash weight by ear
+5. only then add:
+   - second simultaneous SFX slot
+   - better owner arbitration
+   - optional APU Pulse 2 utility lane

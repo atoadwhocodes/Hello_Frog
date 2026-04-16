@@ -1,0 +1,41 @@
+VRC6 pack next-pass checklist
+==============================
+
+High-value immediate tasks
+--------------------------
+1. Confirm mapper number in header / branch:
+   - mapper 024
+   - or mapper 026
+
+2. Wire these minimum triggers first:
+   - SFX_FROG_RIBBIT_SHORT
+   - SFX_FROG_JUMP_SHORT
+   - SFX_FROG_LAND_SOFT
+   - SFX_FROG_WALK_1 / 2 / 3
+   - SFX_FROG_SWIM_1 / 2
+   - SFX_FROG_SPLASH_IN
+   - SFX_FROG_SHORE_UP
+   - SFX_FROG_PAD_LAND
+   - SFX_FAIL_WATER
+   - SFX_SUCCESS
+   - MUS_TITLE
+   - MUS_PLAY_A
+   - MUS_SELECT
+
+3. Listen for these failure points:
+   - ribbit too bright / too toy-like
+   - saw too buzzy / too loud
+   - splash noise too white-noise harsh
+   - heavy land too close to fail-water
+   - gameplay music masking walk/swim
+
+4. First likely tune-up spots:
+   - V6SAW_18 / V6SAW_24 values for ribbit
+   - V6P50 vs V6P25 on big ribbit
+   - swim VRC6 pulse pitch range
+   - triangle body notes on splash / land
+
+5. After that:
+   - add channel-owner table instead of all-or-nothing freeze
+   - allow one low-priority ambient + one main SFX
+   - decide whether APU Pulse 2 stays free or joins music

@@ -1,0 +1,6 @@
+file,sample_rate_hz,channels,sample_width_bytes,frames,duration_seconds,duration_frames_60hz
+frog_idle_shuffle.wav,44100,1,2,5511,0.124966,7.5
+frog_jump.wav,44100,1,2,5292,0.12,7.2
+frog_land.wav,44100,1,2,3528,0.08,4.8
+frog_ribbit_button.wav,44100,1,2,8731,0.197982,11.88
+frog_walk.wav,44100,1,2,5291,0.119977,7.2

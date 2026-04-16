@@ -1,0 +1,26 @@
+sfx_name,frame,channel,action,detail
+frog_ribbit,0,VRC6 Saw,note on,strong body start
+frog_ribbit,0,VRC6 Pulse 1,note on,throat attack
+frog_ribbit,1,VRC6 Pulse 2,optional,tiny front tick
+frog_ribbit,2,VRC6 Saw,pitch,begin mild downward sweep
+frog_ribbit,3,VRC6 Pulse 1,volume,start fading
+frog_ribbit,6,VRC6 Saw,volume,mid decay
+frog_ribbit,8,VRC6 Pulse 1,note off,release top edge
+frog_ribbit,10,VRC6 Saw,volume,tail almost gone
+frog_ribbit,11,VRC6 Saw,note off,end
+frog_jump,0,VRC6 Pulse 2,note on,bright hop click
+frog_jump,1,VRC6 Pulse 2,pitch,small upward bend
+frog_jump,2,VRC6 Pulse 1,optional,secondary support
+frog_jump,4,VRC6 Pulse 2,volume,fast decay
+frog_jump,6,VRC6 Pulse 2,note off,end
+frog_land,0,2A03 Noise,note on,contact burst
+frog_land,1,Triangle/VRC6 Saw,optional,tiny body thunk
+frog_land,2,2A03 Noise,volume,drop fast
+frog_land,4,2A03 Noise,note off,end
+frog_walk,0,2A03 Noise or VRC6 Pulse 2,note on,short step tick
+frog_walk,2,same,volume,tiny settle
+frog_walk,4,same,note off,end
+frog_idle,0,2A03 Noise,note on,small rustle
+frog_idle,1,VRC6 Pulse 2,optional,micro movement tap
+frog_idle,3,2A03 Noise,volume,fade
+frog_idle,6,2A03 Noise,note off,end
