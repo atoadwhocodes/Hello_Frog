@@ -1,0 +1,2046 @@
+{
+  "sprite_canvas": [
+    24,
+    32
+  ],
+  "frame_tile_count": 12,
+  "styles": [
+    {
+      "id": "green",
+      "label": "GREEN TOAD",
+      "source": "frog_green_spritesheet.png",
+      "style_index": 0,
+      "chr_page": 1,
+      "chr_bank_base": 4,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            9,
+            20,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            9,
+            20,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            9,
+            20,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            9,
+            20,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            8,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            9,
+            21,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            11,
+            26,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            9,
+            21,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            8,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            7,
+            13,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            9,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "tophat",
+      "label": "TOP HAT TOAD",
+      "source": "frog_tophat_spritesheet.png",
+      "style_index": 1,
+      "chr_page": 2,
+      "chr_bank_base": 8,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            8,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            3,
+            26,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            8,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            8,
+            10,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            7,
+            5,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            10,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            7,
+            3,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            7,
+            9,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "cowboy",
+      "label": "COWBOY TOAD",
+      "source": "frog_cowboy_spritesheet.png",
+      "style_index": 2,
+      "chr_page": 3,
+      "chr_bank_base": 12,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            6,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            4,
+            27,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            6,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            6,
+            6,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            6,
+            4,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            6,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            6,
+            11,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "viking",
+      "label": "VIKING TOAD",
+      "source": "frog_viking_spritesheet.png",
+      "style_index": 3,
+      "chr_page": 4,
+      "chr_bank_base": 16,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            7,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            7,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            6,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            8,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            7,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            7,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            5,
+            26,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            7,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            8,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            8,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            7,
+            7,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            7,
+            5,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "pirate",
+      "label": "PIRATE TOAD",
+      "source": "frog_pirate_spritesheet.png",
+      "style_index": 4,
+      "chr_page": 5,
+      "chr_bank_base": 20,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            5,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            5,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            5,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            6,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            5,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            5,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            7,
+            3,
+            27,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            5,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            6,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            6,
+            10,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            5,
+            5,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            6,
+            10,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            5,
+            3,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            5,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            5,
+            9,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "clown",
+      "label": "CLOWN TOAD",
+      "source": "frog_clown_spritesheet.png",
+      "style_index": 5,
+      "chr_page": 6,
+      "chr_bank_base": 24,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            8,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            7,
+            13,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            7,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            4,
+            26,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            7,
+            14,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            8,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            8,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            7,
+            6,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            11,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            7,
+            4,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            7,
+            12,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            7,
+            10,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    },
+    {
+      "id": "glasses",
+      "label": "GLASSES TOAD",
+      "source": "frog_funnyglasses_spritesheet.png",
+      "style_index": 6,
+      "chr_page": 7,
+      "chr_bank_base": 28,
+      "frame_count": 20,
+      "frames": [
+        {
+          "index": 0,
+          "grid": [
+            0,
+            0
+          ],
+          "bbox": [
+            8,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 0
+        },
+        {
+          "index": 1,
+          "grid": [
+            1,
+            0
+          ],
+          "bbox": [
+            8,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 12
+        },
+        {
+          "index": 2,
+          "grid": [
+            2,
+            0
+          ],
+          "bbox": [
+            8,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 24
+        },
+        {
+          "index": 3,
+          "grid": [
+            3,
+            0
+          ],
+          "bbox": [
+            9,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 36
+        },
+        {
+          "index": 4,
+          "grid": [
+            4,
+            0
+          ],
+          "bbox": [
+            8,
+            18,
+            26,
+            32
+          ],
+          "tile_base": 48
+        },
+        {
+          "index": 5,
+          "grid": [
+            5,
+            0
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 60
+        },
+        {
+          "index": 6,
+          "grid": [
+            0,
+            1
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 72
+        },
+        {
+          "index": 7,
+          "grid": [
+            1,
+            1
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 84
+        },
+        {
+          "index": 8,
+          "grid": [
+            2,
+            1
+          ],
+          "bbox": [
+            8,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 96
+        },
+        {
+          "index": 9,
+          "grid": [
+            3,
+            1
+          ],
+          "bbox": [
+            8,
+            8,
+            26,
+            28
+          ],
+          "tile_base": 108
+        },
+        {
+          "index": 10,
+          "grid": [
+            4,
+            1
+          ],
+          "bbox": [
+            8,
+            19,
+            26,
+            32
+          ],
+          "tile_base": 120
+        },
+        {
+          "index": 11,
+          "grid": [
+            0,
+            2
+          ],
+          "bbox": [
+            9,
+            16,
+            26,
+            32
+          ],
+          "tile_base": 132
+        },
+        {
+          "index": 12,
+          "grid": [
+            1,
+            2
+          ],
+          "bbox": [
+            8,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 144
+        },
+        {
+          "index": 13,
+          "grid": [
+            2,
+            2
+          ],
+          "bbox": [
+            7,
+            10,
+            25,
+            29
+          ],
+          "tile_base": 156
+        },
+        {
+          "index": 14,
+          "grid": [
+            3,
+            2
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 168
+        },
+        {
+          "index": 15,
+          "grid": [
+            4,
+            2
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 180
+        },
+        {
+          "index": 16,
+          "grid": [
+            1,
+            3
+          ],
+          "bbox": [
+            7,
+            15,
+            26,
+            32
+          ],
+          "tile_base": 192
+        },
+        {
+          "index": 17,
+          "grid": [
+            2,
+            3
+          ],
+          "bbox": [
+            7,
+            8,
+            26,
+            28
+          ],
+          "tile_base": 204
+        },
+        {
+          "index": 18,
+          "grid": [
+            3,
+            3
+          ],
+          "bbox": [
+            8,
+            17,
+            26,
+            32
+          ],
+          "tile_base": 216
+        },
+        {
+          "index": 19,
+          "grid": [
+            4,
+            3
+          ],
+          "bbox": [
+            8,
+            15,
+            26,
+            30
+          ],
+          "tile_base": 228
+        }
+      ]
+    }
+  ]
+}
